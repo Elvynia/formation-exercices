@@ -37,6 +37,7 @@ public class Main {
 		staff.addEmployee(new Warehouseman("Jeanne", "Stocketout", 32, hireDate, 45));
 		staff.addEmployee(new ProducerWithRisk("Jean", "Flippe", 28, hireDate, 1000));
 		staff.addEmployee(new WarehousemanWithRisk("Al", "Abordage", 30, hireDate, 45));
+		staff.addEmployee(new WarehousemanWithRisk("Jean", "Aimar", 35, hireDate, 60));
 		System.out.println(staff.displaySalaries());
 		System.out.println("Le salaire moyen dans l'entreprise est de " + staff.getAverageSalary()
 				+ " euros.");
