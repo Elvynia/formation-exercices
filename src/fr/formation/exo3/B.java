@@ -6,7 +6,6 @@ class B extends A {
 	public B(int b) {
 		super(2 * b);
 		this.a = b;
-
 	}
 
 	@Override

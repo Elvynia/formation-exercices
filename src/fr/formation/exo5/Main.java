@@ -18,4 +18,16 @@ public class Main {
 	static void modifyPrimitive(int i) {
 		i = 50;
 	}
+
+	public static void createArray() {
+		int[] array = { 5 };
+		System.out.println(array[0]);
+		modifyArray(array);
+		System.out.println(array[0]);
+	}
+
+	public static void modifyArray(int[] array) {
+		array[0] = 36;
+		System.out.println(array[0]);
+	}
 }
