@@ -177,12 +177,12 @@ y: 1
 
 Expliquez pourquoi les résultats obtenus par les classes `Moyenne1` et `Moyenne2` sont différents.
 
-```
+```java
 class Moyenne1 {
   public static void main(String[] args) {
     double noteProgrammation = 6.0;
     double noteAlgebre = 5.0;
-    System.out.println(&quot;Ma moyenne est &quot; + (noteProgrammation++ + noteAlgebre) / 2.0 );
+    System.out.println("Ma moyenne est " + (noteProgrammation++ + noteAlgebre) / 2.0 );
   }
 }
 
@@ -190,7 +190,40 @@ class Moyenne2 {
   public static void main(String[] args) {
     double noteProgrammation = 6.0;
     double noteAlgebre = 5.0;
-    System.out.println(&quot;Ma moyenne est &quot; + (++noteProgrammation + noteAlgebre) / 2.0 );
+    System.out.println("Ma moyenne est " + (++noteProgrammation + noteAlgebre) / 2.0 );
+  }
+}
+```
+## Exercice 9
+
+Écrivez un petit programme Java, Degre3.java, vous permettant d&#39;évaluer un polynôme du3ème degré de la forme:
+`((a+b)/2)x^3 + (a+b)^2x^2 + a + b + c`
+
+Exemple d'exécution:
+```
+Entrez a (int) : 1
+Entrez b (int) : 2
+Entrez c (int) : 3
+Entrez x (double) : 3.5
+La valeur du polynôme est : 180.5625
+```
+Utilisez `Math.pow(a, b)` pour calculer des puissances.
+
+## Exercice 10
+
+Expliquez pourquoi le résultat à l'affichage du programme ci-dessous est toujours "China blue" et non "China blue Express".
+
+```java
+class ConcatIncorrecte {
+  public static void main(String[] args) {
+    String s = "China Blue";
+    System.out.println(s);
+    concat(s, " Express");
+    System.out.println(s);
+  }
+
+  public static void concat(String s, String s2) {
+    s +=s2;
   }
 }
 ```
