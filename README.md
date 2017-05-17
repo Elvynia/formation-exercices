@@ -46,3 +46,7 @@ public class Main {
   }
 }
 ```
+
+## Exercice 3
+
+Regardez les classes du package fr.formation.exo3 et essayez de prédire l'affichage que doit donner l'exécution de la méthode ```main()``` dans la classe ```Alphabet```. Une attention particulière devra être portée sur le polymorphisme utilisé dans la hierarchie des classes ```A```, ```B``` et ```C```, qui démontre une situation de "shadowing" entre ```B.b``` et ```C.b```.
