@@ -156,3 +156,41 @@ public static void main(String args[]) {
   }
 }
 ```
+
+## Exercice 7
+
+Implémentez un algorithme vous permettant de permuter les valeurs de deux variables.
+
+Exemple d'exécution:
+```
+Entrez x: 1
+Entrez y: 2
+Avant permutation:
+x: 1
+y: 2
+Après permutation:
+x: 2
+y: 1
+```
+
+## Exercice 8
+
+Expliquez pourquoi les résultats obtenus par les classes `Moyenne1` et `Moyenne2` sont différents.
+
+```
+class Moyenne1 {
+  public static void main(String[] args) {
+    double noteProgrammation = 6.0;
+    double noteAlgebre = 5.0;
+    System.out.println(&quot;Ma moyenne est &quot; + (noteProgrammation++ + noteAlgebre) / 2.0 );
+  }
+}
+
+class Moyenne2 {
+  public static void main(String[] args) {
+    double noteProgrammation = 6.0;
+    double noteAlgebre = 5.0;
+    System.out.println(&quot;Ma moyenne est &quot; + (++noteProgrammation + noteAlgebre) / 2.0 );
+  }
+}
+```
