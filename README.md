@@ -2,10 +2,21 @@
 Exercices simples pour pratiquer les bases du langage Java.
 
 ## Table des matières :
-- [Exercice 1](#exo1)
+- [Exercice 1](#exercice-1)
+- [Exercice 2](#exercice-2)
+- [Exercice 3](#exercice-3)
+- [Exercice 4](#exercice-4)
+- [Exercice 5](#exercice-5)
+- [Exercice 6](#exercice-6)
+- [Exercice 7](#exercice-7)
+- [Exercice 8](#exercice-8)
+- [Exercice 9](#exercice-9)
+- [Exercice 10](#exercice-10)
+- [Exercice 11](#exercice-11)
+- [Exercice 12](#exercice-12)
 
 
-## <a name="exo1"></a>Exercice 1
+## Exercice 1
 
 Ecrivez un programme Java qui répond aux contraintes suivantes :
 - Le programme doit demander à l'utilisateur de saisir un nombre
