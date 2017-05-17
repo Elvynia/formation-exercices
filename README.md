@@ -1,7 +1,11 @@
 # Formation Exercices
 Exercices simples pour pratiquer les bases du langage Java.
 
-## Exercice 1
+## Table des matières :
+- [Exercice 1](#exo1)
+
+
+## <a name="exo1"></a>Exercice 1
 
 Ecrivez un programme Java qui répond aux contraintes suivantes :
 - Le programme doit demander à l'utilisateur de saisir un nombre
