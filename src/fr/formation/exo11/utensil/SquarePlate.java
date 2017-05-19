@@ -9,7 +9,12 @@ package fr.formation.exo11.utensil;
  *
  */
 public class SquarePlate extends Utensil implements Plate {
-	public final double score;
+	public double score;
+	
+	public SquarePlate() {
+		super(0);
+		this.score = 0;
+	}
 
 	/**
 	 * Constructeur.
@@ -42,6 +47,11 @@ public class SquarePlate extends Utensil implements Plate {
 	@Override
 	public int calculateValue(int currentYear) {
 		return super.calculateValue(currentYear) * 5;
+	}
+
+	@Override
+	public void setScore(Object obj) {
+		this.score = (double) obj;
 	}
 
 }

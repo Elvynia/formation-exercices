@@ -7,7 +7,12 @@ package fr.formation.exo11.utensil;
  *
  */
 public class Spoon extends Utensil {
-	public final double length;
+	public double length;
+	
+	public Spoon() {
+		super(0);
+		this.length = 0;
+	}
 
 	/**
 	 * Constructeur.
@@ -21,6 +26,11 @@ public class Spoon extends Utensil {
 	public Spoon(int year, double length) {
 		super(year);
 		this.length = length;
+	}
+
+	@Override
+	public void setScore(Object obj) {
+		this.length = (double) obj;
 	}
 
 }

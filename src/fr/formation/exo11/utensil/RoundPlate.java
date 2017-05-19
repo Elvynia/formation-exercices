@@ -1,7 +1,12 @@
 package fr.formation.exo11.utensil;
 
 public class RoundPlate extends Utensil implements Plate {
-	public final double ray;
+	public double ray;
+	
+	public RoundPlate() {
+		super(0);
+		this.ray = 0;
+	}
 
 	/**
 	 * Constructeur.
@@ -24,6 +29,11 @@ public class RoundPlate extends Utensil implements Plate {
 	@Override
 	public double calculateArea() {
 		return Math.pow(this.ray, 2) * Math.PI;
+	}
+
+	@Override
+	public void setScore(Object obj) {
+		this.ray = (double) obj;
 	}
 
 }

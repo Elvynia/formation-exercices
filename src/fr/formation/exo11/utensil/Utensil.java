@@ -13,7 +13,7 @@ public abstract class Utensil {
 	/**
 	 * Propriété représentant l'année de la création de l'ustensile.
 	 */
-	public final int year;
+	public int year;
 
 	/**
 	 * Constructeur.
@@ -36,4 +36,11 @@ public abstract class Utensil {
 	public int calculateValue(int currentYear) {
 		return currentYear - this.year - 50;
 	}
+	
+	/**
+	 * Permet de remplir la cote correspondant au type d'ustensile.
+	 * 
+	 * @param obj la valeur à mémoriser dans la propriété de l'instance.
+	 */
+	public abstract void setScore(final Object obj);
 }
