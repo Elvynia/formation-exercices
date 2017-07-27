@@ -66,16 +66,15 @@ public class Main {
 Résultat attendu :
 ```
 Liste des salaires des employés :
-	L'employé Pierre Business a un salaire de 6400
-	L'employé Léon Vendtout a un salaire de 4800
-	L'employé Yves Bosseur a un salaire de 5000
-	L'employé Jeanne Stocketout a un salaire de 2925
-	L'employé Jean Flippe a un salaire de 5200
-	L'employé Al Abordage a un salaire de 3125
-	L'employé Jean Aimar a un salaire de 4100
+	L'employé Pierre Business a un salaire de 6400 €
+	L'employé Léon Ventout a un salaire de 4800 €
+	L'employé Yves Ahalouest a un salaire de 5000 €
+	L'employé Jeanne Stoktout a un salaire de 2925 €
+	L'employé Jean Flippe a un salaire de 5200 €
+	L'employé Al Abordage a un salaire de 3125 €
 
-Le salaire moyen dans l'entreprise est de 4507 euros.
-̀̀̀
+Valeur du salaire moyen : 4575 €
+```
 
 ### Partie 2
 Lorsque vous montrez au directeur le résultat de votre programme permettant d'afficher les salaires, il est content mais il y a un problème... Il a oublié de vous parler du fait que la societé travaille avec des indépendants, et leur factures doivent entrer en compte dans le calcul des salaires.
