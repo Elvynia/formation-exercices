@@ -62,7 +62,8 @@ public class Main {
   }
 }
 ```
-### Partie 2
+
+### Partie 2
 Lorsque vous montrez au directeur le résultat de votre programme permettant d'afficher les salaires, il est content mais il y a un problème... Il a oublié de vous parler du fait que la societé travaille avec des indépendants, et leur factures doivent entrer en compte dans le calcul des salaires.
 
 Vous récupérez les informations suivantes sur les indépendants :
