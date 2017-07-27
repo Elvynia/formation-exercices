@@ -30,6 +30,7 @@ Ecrivez un programme Java qui répond aux contraintes suivantes :
 
 ## Exercice 2
 
+### Partie 1
 Une petite entreprise de produits chimiques souhaite informatiser la gestion du calcul du salaires de ses employés. Cet exercice a pour but la réflexion et la pratique autour des problématiques de programmation orientées objets. En effet afin permettre à cette entreprise d'informatiser le calcul des salaires, il faut tout d'abord construire une hierarchie d'objets permettant de représenter ses salariés.
 
 Lors de votre entretien avec le directeur, vous notez les contraintes suivantes :
@@ -61,6 +62,20 @@ public class Main {
   }
 }
 ```
+### Partie 2
+Lorsque vous montrez au directeur le résultat de votre programme permettant d'afficher les salaires, il est content mais il y a un problème... Il a oublié de vous parler du fait que la societé travaille avec des indépendants, et leur factures doivent entrer en compte dans le calcul des salaires.
+
+Vous récupérez les informations suivantes sur les indépendants :
+- Ils sont caractérisés par un nom et un numéro SIREN, ainsi qu'une liste de facture pour le mois courant
+- L'équivalent de leur salaire se calcul avec la somme des factures qui lui sont associées
+- Une facture est caractérisée par une date, une somme en euros, et un libellé représentant la nature de la prestation
+- Les factures dont le libellé commence par "Frais de déplacement - " ne doivent pas être prises en compte dans le calcul du salaire d'un indépendant
+
+A la fin de votre entretien, vous récupérez une information supplémentaire de dernière minute. Le directeur aimerait avoir l'affichage du nom complet de l'employé lors de l'affichage de son salaire, et si il est indépendant, cela doit être facilement reconnaissable.
+
+Exemple:
+- Employé salarié -> getNom() -> "Employé Jean Rigol : xxxx €"
+- Employé indépendant -> getNom() -> "Indépendant Jean Peplu : xxxx €"
 
 ## Exercice 3
 
@@ -75,7 +90,7 @@ Si vous sollicitez l'aide du compilateur pour trouver les erreurs, sachez qu'il 
 ```java
 class ErreursMethodes {
 
-  public static void main (String[] args) {
+  public static void main (String[] args) { 
     int i1 = methode1();
     int i2 = methode2();
     int i3 = methode3();
