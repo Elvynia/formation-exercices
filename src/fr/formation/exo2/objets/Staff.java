@@ -17,7 +17,7 @@ public class Staff {
 	 * tous les employés de la même manière sans faire de différence sur
 	 * l'implémentation utilisée.
 	 */
-	public Collection<Employee> employees;
+	public Collection<Payrole> employees;
 
 	/**
 	 * Constructeur par défaut.
@@ -31,7 +31,7 @@ public class Staff {
 	 *
 	 * @param employee
 	 */
-	public void addEmployee(Employee employee) {
+	public void addEmployee(Payrole employee) {
 		this.employees.add(employee);
 	}
 
@@ -53,7 +53,7 @@ public class Staff {
 		StringBuffer buffer = new StringBuffer();
 		// Utilisation de append avec un objet String.
 		buffer.append("Liste des salaires des employés :\n");
-		for (Employee employee : this.employees) {
+		for (Payrole employee : this.employees) {
 			// Utilisation de append avec un type primitif char.
 			buffer.append('\t');
 			buffer.append(employee.getName());
@@ -77,7 +77,7 @@ public class Staff {
 	 */
 	public int getAverageSalary() {
 		int total = 0;
-		for (Employee employee : this.employees) {
+		for (Payrole employee : this.employees) {
 			// Utilisation de l'opérateur += qui équivaux à variable = variable
 			// + salaire. Cet opérateur permet simplement de ne pas avoir à
 			// répéter le nom de la variable.

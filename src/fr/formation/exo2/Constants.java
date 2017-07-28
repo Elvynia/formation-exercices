@@ -9,6 +9,11 @@ package fr.formation.exo2;
  *
  */
 public class Constants {
+	
+	/**
+	 * Préfixe du libellé des factures de frais de déplacement pour les indépendants.
+	 */
+	public static final String TRAVEL_FEES = "Frais de déplacement";
 
 	/**
 	 * Salaire par unité pour un employé dans la production.

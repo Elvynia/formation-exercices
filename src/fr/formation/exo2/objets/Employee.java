@@ -11,7 +11,7 @@ import java.util.Date;
  * @author hb-asus
  *
  */
-public abstract class Employee {
+public abstract class Employee implements Payrole {
 	// Propriétés communes à tous les employés.
 	public int age;
 	public String firstName;
@@ -36,15 +36,6 @@ public abstract class Employee {
 		this.age = age;
 		this.hireDate = hireDate;
 	}
-
-	/**
-	 * Méthode permettant de calculer le salaire de l'employé. Cette méthode est
-	 * abstraite car elle n'est pas implémentée dans cette classe, mais sera
-	 * implémentée par les classes enfant (qui utilisent "extends Employee").
-	 *
-	 * @return int le montant du salaire mensuel de l'employé.
-	 */
-	public abstract int calculateSalary();
 
 	/**
 	 * Méthode permettant de récupérer une chaine de caractère représantant le
