@@ -307,7 +307,7 @@ Aide :
   - On encapsule ensuite le reader dans une classe un peu plus avancée permettant de lire des lignes complètes dans le flux : `java.io.BufferedReader`
 - Il faut ensuite transformer ces données récupérées pour chaque ligne sous forme de chaînes de caractères (`java.util.List<String>`)
   - Chaque ligne récupérée dans le fichier correspond à un objet d'ustensile
-  - Chaque colonne de la ligne est séparée par le caractère ';'. Il faut donc utiliser la méthode `java.lang.String.split()`
+  - Chaque colonne de la ligne est séparée par le caractère ','. Il faut donc utiliser la méthode `java.lang.String.split()`
   - La colonne type permet de déterminer quelle classe utiliser
   
  ### Partie 3 : Afficher les données demandées
