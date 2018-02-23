@@ -1,0 +1,10 @@
+{
+	"compilerOptions": {
+		"target": "es5",
+		"noImplicitAny": true,
+		"noImplicitReturns": true,
+		"outDir": "dist"
+		// "declaration": true,
+		// "traceResolution": true
+	}
+}

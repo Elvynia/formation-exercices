@@ -1,0 +1,16 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var staff_1 = require("./staff");
+var salesman_1 = require("./salesman");
+var representant_1 = require("./representant");
+var producer_1 = require("./producer");
+var wharehouseman_1 = require("./wharehouseman");
+var myEmployees = new staff_1.Staff();
+myEmployees.add(new salesman_1.Salesman("Pierre", "Business", 45, "1995", 30000));
+myEmployees.add(new representant_1.Representant("Léon", "Ventout", 25, "2001", 20000));
+myEmployees.add(new producer_1.Producer("Yves", "Ahalouest", 28, "1998", 1000));
+myEmployees.add(new wharehouseman_1.Wharehouseman("Jeanne", "Stoktout", 32, "1998", 45));
+myEmployees.add(new producer_1.ProducerWithRisk("Jean", "Flippe", 28, "2000", 1000));
+myEmployees.add(new wharehouseman_1.WharehousemanWithRisk("Al", "Abordage", 30, "2001", 45));
+myEmployees.displaySalaries();
+myEmployees.displayAverageSalary();
