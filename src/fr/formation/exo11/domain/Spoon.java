@@ -23,4 +23,9 @@ public class Spoon extends Utensil {
 		this.setLength(Float.parseFloat(obj.toString()));
 	}
 
+	@Override
+	public String toString() {
+		return super.toString().replace("Ustensile", "Cuillère");
+	}
+
 }

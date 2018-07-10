@@ -72,6 +72,11 @@ public class CsvParser implements Parser {
 			utensil = new Spoon();
 			break;
 		default:
+			// Cas d'erreur aucune correspondance avec un ustensile connu de
+			// l'application.
+			LOGGER.error(
+					"Cannot transform line [{}] into Ustensil, not a valid type.");
+			System.exit(2);
 			break;
 		}
 		// Récupérer et mémoriser l'année de fabrication.
@@ -86,11 +91,13 @@ public class CsvParser implements Parser {
 	private void buildHeaders(String line) {
 		this.headerMap = new HashMap<>();
 		final List<String> headers = Arrays.asList(line.split(CSV_SEPARATOR));
+		final List<String> found = new ArrayList<>();
 		for (final HEADER header : HEADER.values()) {
 			final int index = headers.indexOf(header.column);
 			if (index >= 0) {
 				// Colonne retrouvée dans le CSV, mémoriser l'indice de colonne.
 				this.headerMap.put(header, index);
+				found.add(header.column);
 			} else {
 				// Colonne obligatoire manquante !
 				LOGGER.error(
@@ -98,6 +105,15 @@ public class CsvParser implements Parser {
 								+ " de continuer les traitements.",
 						header.column);
 				System.exit(1);
+			}
+		}
+		if (headers.size() != found.size()) {
+			final List<String> unused = new ArrayList<>(headers);
+			unused.removeAll(found);
+			for (final String unknownHeader : unused) {
+				LOGGER.warn(
+						"La colonne '{}' n'est pas reconnue dans l'application.",
+						unknownHeader);
 			}
 		}
 	}

@@ -22,4 +22,9 @@ public class RoundPlate extends Utensil implements Plate {
 		this.radius = radius;
 	}
 
+	@Override
+	public String toString() {
+		return super.toString().replace("Ustensile", "Assiette ronde");
+	}
+
 }
