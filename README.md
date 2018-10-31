@@ -241,7 +241,7 @@ class Moyenne2 {
 ## Exercice 9
 
 Écrivez un petit programme Java, Degre3.java, vous permettant d&#39;évaluer un polynôme du3ème degré de la forme:
-`((a+b)/2)x^3 + (a+b)*2x^2 + a + b + c`
+`((a+b)/2)x^3 + (a+b)^2 * x^2 + a + b + c`
 
 Exemple d'exécution:
 ```
